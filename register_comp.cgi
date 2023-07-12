@@ -44,7 +44,7 @@ htmlText = '''
 <html lang="ja">
     <head>
         <meta charset="utf-8">
-        <title>sample file</title>
+        <title>登録内容の確認</title>
     </head>
 
     <body>

@@ -17,7 +17,7 @@ htmlText = '''
 <html lang="ja">
     <head>
         <meta charset="utf-8">
-        <title>sample file</title>
+        <title>アカウントの作成</title>
         <! 見た目調整->
         <style>
         .center{
