@@ -1,0 +1,46 @@
+input[type="submit"] {
+width: 200px;
+height: 65px;
+border-radius: 30px;
+border: 1px solid #FFF;
+background: #9E9C62;
+position: absolute;
+top: 320px;
+left: 530px;
+}
+		
+input[type="text"] {
+width: 580px;
+height: 43px;
+flex-shrink: 0;
+border: 3px solid #9E9C62;
+background: #FFF;
+position: absolute;
+top: 180px;
+left:  330px;
+}
+
+input[type="password"] {
+width: 580px;
+height: 43px;
+flex-shrink: 0;
+border: 3px solid #9E9C62;
+background: #FFF;
+position: absolute;
+top: 250px;
+left:  330px;
+}
+
+a[href="register.cgi"] {
+color: #FFF;
+position: absolute;
+top: 400px;
+left: 530px;
+}
+
+a[href="forgot_pswd.cgi"] {
+color: #FFF;
+position: absolute;
+top: 430px;
+left: 515px;
+}

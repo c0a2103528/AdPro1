@@ -1,0 +1,20 @@
+input[name="email"]{
+width: 200px;
+height: 20px;
+position: absolute;
+top: 300px;
+left: 500px;
+}
+
+input[name="submit"]{
+position: absolute;
+top: 300px;
+left: 710px;
+}
+
+div[class="text"] {
+color: #FFF;
+position: absolute;
+top: 250px;
+left: 380px;
+}

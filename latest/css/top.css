@@ -1,0 +1,330 @@
+/* html/css-bin/top.css 
+スライドショー用に11.png,12.png追加*/
+
+body {
+  font-family: Arial, sans-serif;
+  background: #365C5F;
+}
+/* ヘッダー */
+body,
+ul {
+	margin: 0;
+}
+
+body {
+	background-color: #193739;
+	}
+header {
+  position: relative;
+  z-index: 1;
+}
+
+.inner {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1000px;
+	margin: 0 auto;
+	left: 800px;
+	top: 35px;
+	position: absolute; 
+  z-index: 2; 
+}
+
+.logo {
+	width:70px;
+	position: absolute;
+	left: -200px;
+}
+
+.logo img {
+	height:auto;
+	width: 100%;
+}
+
+ul {
+	display: flex;
+	list-style: none;
+}
+
+li a{
+	color: #FFF;
+	display: block;
+	font-size: 16px;
+	padding: 10px 30px;
+	text-decoration: none;
+}
+
+li:not(:first-of-type) {
+	margin-left: 10px;
+}
+
+input[type="text"] {
+	color: #FFF;
+	border-radius: 25px;
+	border: 1px solid #FFF;
+	background: rgba(217, 217, 217, 0.00);
+	width: 200px;
+	height: 30px;
+	position: absolute;
+	top: 40px;
+	left: 40px;
+}
+
+
+/* 画像のスタイル */
+.img-frame {
+  position: relative;
+  width: 70%;
+  height: 300px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 2000px) {
+  .img-frame {
+    width: 100%;
+    height: 667px;
+  }
+  .img-01,
+  .img-02 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@keyframes slide-animation-01 {
+  0% {
+    opacity: 1;
+    transform: scale(1.0);
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+    transform: scale(1.15);
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.0);
+  }
+}
+@keyframes slide-animation-02 {
+  0% {
+    opacity: 0;
+    transform: scale(1.0);
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.0);
+  }
+}
+
+/* スライドショー部分 */
+.slide {
+  position   : relative;
+  overflow   : hidden;
+                    /* 画像のサイズに合わせて変更ください */
+  width      : 100%;
+  height     : 500px;
+  margin     : auto;      /* サンプルは中央寄せの背景：白 */
+}
+
+.slide img {
+  display    : block;
+  position   : absolute;
+  width      : inherit;
+  height     : inherit;
+                      /* 画像のサイズを表示エリアに合せる */
+  opacity    : 0;
+  animation  : slideAnime 20s ease infinite;
+}
+
+.slide img:nth-of-type(1) { animation-delay: 0s }
+.slide img:nth-of-type(2) { animation-delay: 5s }
+.slide img:nth-of-type(3) { animation-delay: 10s }
+.slide img:nth-of-type(4) { animation-delay: 15s }
+
+@keyframes slideAnime{
+   0% { opacity: 0 }
+   6% { opacity: 1 }
+  25% { opacity: 1 }
+  31% { opacity: 0 }
+ 100% { opacity: 0 }
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FFF;
+  font-family: Abhaya Libre;
+  font-size: 100px;
+}
+
+.img-01 {
+  background-image: url("../group/imgs/11.png");
+  animation: slide-animation-01 24s infinite;
+}
+
+.img-02 {
+  background-image: url("../group/imgs/12.png");
+  animation: slide-animation-02 24s infinite;
+}
+
+
+/* テキスト */
+p {
+  font-size: 25px;
+  color: #FFF;
+}
+
+
+/* "Products" */
+p.product-title {
+    width: 657px;
+    height: 162px;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Abel;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 auto;
+}
+
+
+p.name,p.price{
+color: #FFF;
+font-family: Brygada 1918;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;}
+}
+
+/* 3つ1行配置 */
+.merchandise-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.merchandise-row {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.merchandise-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+    margin-top: 100px
+}
+
+.merchandise-img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    align-self: center;
+}
+
+.name, .price {
+    margin: 0;
+}
+
+.detail-button input[type="submit"] {
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #FFF;
+    background: #9E9C62;
+    color: #FFF;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.detail-button input[type="submit"]:hover {
+    background: #FFF;
+    color: #9E9C62;
+    transition: background 0.3s, color 0.3s;
+}
+
+
+/* ShowMore */
+div.showMore_button {
+    display: flex;
+    justify-content: center;
+}
+
+div.showMore_button input[type="submit"]{
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    border: 1px solid #FFF;
+    background: #9E9C62;
+    color: #FFF;
+    font-family: Abel;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    margin-top: 50px;
+}
+
+div.showMore_button input[type="submit"]:hover{
+    background: #FFF;
+    color: #9E9C62;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* 区切り線 */
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: #FFF;
+  margin-top: 10px;
+  position: absolute;   
+  top: 2850px; 
+}
+
+
+/* ページ下部 */
+.under_menu p {
+color: #FFF;
+    font-size: 28px;
+    text-align: center;
+}
+
+/* ... 追加のスタイルをここに記述します ... */

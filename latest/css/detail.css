@@ -1,0 +1,330 @@
+/* html/projIT/css/detail.css */
+body {
+  font-family: Arial, sans-serif;
+  background: #365C5F;
+}
+/* ヘッダー */
+body,
+ul {
+	margin: 0;
+}
+
+body {
+	background-color: #193739;
+	}
+
+.inner {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1000px;
+	margin: 0 auto;
+	position: absolute;
+	left: 800px;
+	top: 35px;
+}
+
+.logo {
+	width:70px;
+	position: absolute;
+	left: -200px;
+}
+
+.logo img {
+	height:auto;
+	width: 100%;
+}
+
+ul {
+	display: flex;
+	list-style: none;
+}
+
+li a{
+	color: #FFF;
+	display: block;
+	font-size: 16px;
+	padding: 10px 30px;
+	text-decoration: none;
+}
+
+li:not(:first-of-type) {
+	margin-left: 10px;
+}
+
+input[type="text"] {
+	color: #FFF;
+	border-radius: 25px;
+	border: 1px solid #FFF;
+	background: rgba(217, 217, 217, 0.00);
+	width: 200px;
+	height: 30px;
+	position: absolute;
+	top: 40px;
+	left: 40px;
+}
+
+
+/* 画像のスタイル */
+img.detail_image {
+  width: 600px;
+  height: 400.315px;
+  flex-shrink: 0;
+  position: absolute;
+  top: 200px;
+}
+
+img.relation_image1 {
+  width: 150px;
+  height: 100.315px;
+  flex-shrink: 0;
+  position: absolute;
+  top: 1000px;
+  left:55%;
+}
+
+div.relation_info1 {
+  width: 100px;
+  height: 100.315px;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: Abel;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;  
+  top: 1100px; 
+  left:58%;
+}
+
+
+img.relation_image2 {
+  width: 150px;
+  height: 100.315px;
+  flex-shrink: 0;
+  position: absolute;
+  top: 1000px;
+    left:75%;
+}
+
+div.relation_info2 {
+  width: 100px;
+  height: 100.315px;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: Abel;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;  
+  top: 1100px; 
+  left:78%;
+}
+
+.detail_btn{
+  width: 80px;
+  height: 30px;
+  border-radius: 30px;
+  border: 1px solid #FFF;
+  background: #365C5F;
+  color: white;
+  text-align: center;
+  font-family: Brygada 1918;
+  margin: 0px auto;
+}
+
+p.name{
+width: 791px;
+height: 176px;
+flex-shrink: 0;
+color: #FFF;
+  font-family: Abel;
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  position: absolute;  
+  top: 600px;  
+}
+
+p.sentence {
+  width: 532px;
+  height: 558px;
+  flex-shrink: 0;
+  color: #FFF;
+  font-family: Abel;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;  
+  top: 200px;  
+  left: 50%; 
+}
+
+p.relation{
+width: 498px;
+height: 76px;
+flex-shrink: 0;
+color: #FFF;
+font-family: Abel;
+font-size: 36px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  position: absolute;  
+  top: 870px; 
+  left:50%;
+}
+
+
+
+td.cart{
+color: #FFF;
+font-family: Abel;
+font-size: 28px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  position: absolute;  
+  top: 600px;  
+  left:50%;
+}
+
+
+/* 購入品数 */
+td.cart{
+color: #FFF;
+font-family: Abel;
+font-size: 28px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  position: absolute;  
+  top: 800px;  
+}
+
+
+/* レビューボックス */
+form[action="./detail.cgi"] textarea {
+  margin-top: 920px; /* 上側の余白 */
+  margin-bottom: 20px; /* 下側の余白 */
+}
+
+
+/* レビューの星入力部分 */
+.rate-form {
+    position: absolute;
+  top: 880px; /* 上側の余白 */
+}
+
+/* 「レビュー書き込み」のCSS反映させるとレビュー書き込みが出来なくなる */
+p.review_form {
+  color: #FFF;
+  font-family: Abel;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+    position: absolute;
+  top: 820px; /* 上側の余白 */
+}
+
+
+/* カートに追加ボタン */
+div.cart-button {
+  position: absolute;
+  top: 700px;
+  left: 60%;
+}
+
+div.cart-button input[type="submit"] {
+    width: 300px;
+    height: 65px;
+    border-radius: 30px;
+    border: 1px solid #FFF;
+    background: #9E9C62;
+    color: #FFF;
+    font-family: Abel;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+}
+
+div.cart-button input[type="submit"]:hover {
+    background: #FFF;
+    color: #9E9C62;
+    transition: background 0.3s, color 0.3s;
+}
+
+
+/* 区切り線 */
+.line {
+  width: 50%;
+  height: 3px;
+  background-color: #FFF;
+  margin-top: 10px;
+  position: absolute;
+  top: 950px;
+  left: 50%;
+}
+
+/* 星入力 */
+.rate-form {
+  display: flex;               
+  flex-direction: row-reverse; 
+}
+
+.rate-form input[type='radio']{
+  display: none;             
+}
+
+.rate-form label{
+  color: #D2D2D2;              
+  font-size: 30px;             
+  padding: 0 5px;              
+  cursor: pointer;             
+}
+
+.srate-form label:hover,
+.rate-form label:hover ~ label,
+.rate-form input[type='radio']:checked ~ label{
+  color: #F8C601;              
+}
+
+
+/* 書き込みボタン */
+div.review-button input[type="submit"] {
+    width: 100px;
+    height: 45px;
+    border-radius: 30px;
+    border: 1px solid #FFF;
+    background: #9E9C62;
+    color: #FFF;
+    font-family: Abel;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+}
+
+div.review-button input[type="submit"]:hover {
+    background: #FFF;
+    color: #9E9C62;
+    transition: background 0.3s, color 0.3s;
+}
+
+
+/* レビューログ */
+div.review-block {
+color: #FFF;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+/* ... 追加のスタイルをここに記述します ... */
+

@@ -1,0 +1,170 @@
+/* ヘッダー */
+body,
+ul {
+	margin: 0;
+}
+
+body {
+	background-color: #193739;
+	}
+
+.inner {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1000px;
+	margin: 0 auto;
+	position: absolute;
+	left: 800px;
+	top: 35px;
+}
+
+.logo {
+	width:70px;
+	position: absolute;
+	left: -200px;
+}
+
+.logo img {
+	height:auto;
+	width: 100%;
+}
+
+ul {
+	display: flex;
+	list-style: none;
+}
+
+li a{
+	color: #FFF;
+	display: block;
+	font-size: 16px;
+	padding: 10px 30px;
+	text-decoration: none;
+}
+
+li:not(:first-of-type) {
+	margin-left: 10px;
+}
+
+input[type="text"] {
+	color: #FFF;
+	border-radius: 25px;
+	border: 1px solid #FFF;
+	background: rgba(217, 217, 217, 0.00);
+	width: 200px;
+	height: 30px;
+	position: absolute;
+	top: 40px;
+	left: 40px;
+}
+
+
+.h_1{
+  width: 452px;
+  height: 59px;
+  color: #FFF;
+  margin-top: 70px;
+  margin-right: 5px;
+  font-size: 36px;
+}
+
+body{
+  background: #193739;
+  font-family: Brygada 1918;
+  font-style: normal;
+}
+
+.tbl1 {
+ width: 70%;
+ margin: 0px auto;
+ background-color: rgba(255, 255, 255, 0.85);
+ 
+}
+.tbl1 th {
+ padding: 5px;
+ margin: 5px;
+}
+
+.tbl2 {
+ width: 70%;
+ margin: 0px auto;
+ background-color: rgba(255, 255, 255, 0.85);
+ 
+}
+.tbl2 th {
+ padding: 5px;
+ margin: 5px;
+}
+
+.tbl3 {
+ width: 70%;
+ margin: 0px auto;
+ background-color: rgba(255, 255, 255, 0.85);
+ 
+}
+.tbl3 th {
+ padding: 5px;
+ margin: 5px;
+}
+
+p.shipping{
+  background: rgba(255, 255, 255, 0.85);
+  width: 70%;
+  margin: 0px auto;
+  font-weight: bold;
+}
+
+.changing{
+  width: 110px;
+  height: 30px;
+  border-radius: 30px;
+  border: 1px solid #FFF;
+  background: #365C5F;
+  color: white;
+  text-align: center;
+  font-family: Brygada 1918;
+  margin: 0px auto;
+}
+
+.changing:hover{
+  width: 110px;
+  height: 30px;
+  border-radius: 30px;
+  border: 1px solid #FFF;
+  background: #4E7578;
+  color: white;
+  text-align: center;
+  font-family: Brygada 1918;
+  margin: 0px auto;
+}
+
+.decide_btn{
+  width: 70%;
+  margin: 70px auto;
+  text-align: center;
+}
+
+.btn{
+  font-size: 20px;
+  padding: 12px;
+  text-align: center;
+  font-family: Brygada 1918;
+  border-radius: 1px;
+  color: white;
+  border-radius: 3px;
+  border: 1px solid #FFF;
+  background: #9E9C62;
+}
+
+.btn:hover{
+  font-size: 20px;
+  padding: 12px;
+  text-align: center;
+  font-family: Brygada 1918;
+  text-shadow: 0 0 7px #fff,0 0 3px #fff;
+  border-radius: 3px;
+  color: white;
+  border: 1px solid #FFF;
+  background: #C8C57F;
+}
+	

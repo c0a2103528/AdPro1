@@ -1,0 +1,36 @@
+input[name="password"] {
+width: 580px;
+height: 43px;
+flex-shrink: 0;
+border: 3px solid #9E9C62;
+background: #FFF;
+position: relative;
+top: 250px;
+left:  340px;
+}
+
+input[name="ch_password"] {
+width: 580px;
+height: 43px;
+flex-shrink: 0;
+border: 3px solid #9E9C62;
+background: #FFF;
+position: relative;
+top: 300px;
+left:  340px;
+}
+		
+input[type="submit"] {
+width: 100px;
+height: 40px;
+position: absolute;
+top: 400px;
+left: 580px;
+}
+		
+div[class="text"] {
+color: #FFF;
+position: absolute;
+top: 320px;
+left: 520px;
+}

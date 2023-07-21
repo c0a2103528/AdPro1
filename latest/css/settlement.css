@@ -1,0 +1,127 @@
+/* ヘッダー */
+body,
+ul {
+	margin: 0;
+}
+
+.hdr{
+  display: flex;
+  margin: 30px;
+}
+
+body {
+	background-color: #193739;
+	}
+header {
+  position: relative;
+  z-index: 1;
+}
+
+.inner {
+	display: flex;
+	justify-content: space-between;
+	max-width: 1000px;
+	margin: 0 auto;
+	left: 800px;
+	top: 35px;
+	position: absolute; 
+  z-index: 2; 
+}
+
+.logo {
+	width:70px;
+	position: absolute;
+	left: -200px;
+}
+
+.logo img {
+	height:auto;
+	width: 100%;
+}
+
+ul {
+	display: flex;
+	list-style: none;
+}
+
+li a{
+	color: #FFF;
+	display: block;
+	font-size: 16px;
+	padding: 10px 30px;
+	text-decoration: none;
+}
+
+li:not(:first-of-type) {
+	margin-left: 10px;
+}
+
+input[name="serch_box"] {
+	color: #FFF;
+	border-radius: 25px;
+	border: 1px solid #FFF;
+	background: rgba(217, 217, 217, 0.00);
+	width: 200px;
+	height: 30px;
+	position: absolute;
+	top: 40px;
+	left: 40px;
+}
+
+/* css/settlement.css */
+h1{
+  width: 452px;
+  height: 59px;
+  color: #FFF;
+  margin-top: 90px;
+  margin-right: 200px;
+  font-size: 36px;
+}
+
+
+body{
+  background: #193739;
+  font-family: Brygada 1918;
+  font-style: normal;
+}
+
+
+.credit{
+ width: 70%;
+ margin: 0px auto;
+ background-color: rgba(255, 255, 255, 0.85);
+ font-weight: bold;
+ padding: 10px;
+}
+
+
+.confirm-button{
+  width: 70%;
+  margin: 70px auto;
+  text-align: center;
+}
+
+.btn{
+width:50%;
+  font-size: 20px;
+  padding: 12px;
+  text-align: center;
+  font-family: Brygada 1918;
+  border-radius: 1px;
+  color: white;
+  border-radius: 3px;
+  border: 1px solid #FFF;
+  background: #9E9C62;
+}
+
+.btn:hover{
+  font-size: 20px;
+  padding: 12px;
+  text-align: center;
+  font-family: Brygada 1918;
+  text-shadow: 0 0 7px #fff,0 0 3px #fff;
+  border-radius: 3px;
+  color: white;
+  border: 1px solid #FFF;
+  background: #C8C57F;
+}
